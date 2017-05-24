@@ -38,6 +38,7 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 
 <a name="maciej"></a>
 # Maciej Cegłowski: Legends of the ancient web.
+
 Let's reach into the past to see if we can find any insights. What has been will be again, there is nothing new under the sun. In the last couple of years, frontend development has become very complex: there are lots of technologies and frameworks to master. Computers move fast. It's happened before, and will happen again. It happens in backend too: what about virtual machines?
 
 Maciej feels like standards have slipped a little: it's normal on the web things are as fast now as they were 10 years ago, it's normal that a web page is 100mb. A render time of a second is acceptable, rather than instantaneously. Brittle and bloated sorcery: users haven't seen snappy websites in a long time, and this might actually be what they want.
