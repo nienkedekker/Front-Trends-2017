@@ -103,7 +103,21 @@ It's about modularity at its core, it's about modules' responsibilities, and abo
 
 <a name="stefan"></a>
 # Stefan Judis: Watch your back, Browser! You're being observed.
-Notes go here :D
+The web platform evolves extremely fast. Staying up to date is a day job in itself. But we're also living in good times; browser APIs adapt common use cases. We're slowly moving from a pull model towards a push model: the browser can provide us with the information that we need.
+
+Some JS methods can force a repaint. This can cause workload for the browser, causing jankiness (note: sometimes forced repaints are necessary). With an intersection observer, it is possible to avoid this jankiness. Also possible to pause videos when they're no longer in the viewport. Mutation Observer: provides us with a way to react to changes in the DOM.
+
+Check out:
+https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver
+https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+https://developer.mozilla.org/en-US/docs/Web/API/Navigation_timing_API
+https://developer.mozilla.org/en-US/docs/Web/API/Resource_Timing_API
+https://developer.mozilla.org/en-US/docs/Web/API/User_Timing_API
+https://developer.mozilla.org/en-US/docs/Web/API/PerformanceObserver
+https://github.com/w3c/charter-webperf/issues/30
+https://github.com/que-etc/resize-observer-polyfill (note: see similar Closure function https://google.github.io/closure-library/api/goog.dom.ViewportSizeMonitor.html)
+
+Observables: a collection that arrives over time. Observables can be used to model events, asynchronous requests, and animations. Observables can also be transformed, combined, and consumed using Array methods (map, filter, reduce).
 
 <a name="niels"></a>
 # Niels Leenheer: Monsters, mailboxes and other nonsense
@@ -111,7 +125,6 @@ Notes go here :D
 
 <a name="ally"></a>
 # Ally Long: Field-tested interfaces for the next billion
-
 
 <a name="patrick"></a>
 # Patrick Hamann: The First Meaningful Paint
