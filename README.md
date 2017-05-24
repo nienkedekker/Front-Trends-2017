@@ -51,7 +51,16 @@ Big takeaway: what you're working on, and who you're working for is very importa
 
 <a name="una"></a>
 # Una Kravets: The Power of CSS
-Notes go here :D
+Using CSS as a design tool. A lot of engineers have an aversion to CSS, which is partially based on frustration. They think you're not a real dev if you just write CSS and HTML. You can do amazing things with CSS though (plus it's Turing complete). You can use filter values to edit photos, just like in Photoshop. If you apply blend-modes on top of them, they get even more powerful. Like PS, you have Luminosity, Screen, Difference..(my note: Spotify does this well). You might just not need JS either. You can make an accordion with just HTML and CSS, using input labels (accessibility?) and adjacent sibling selectors. Tab groups are another element/component that you don't need JS for -- you can use radio buttons (since only one of them can be open at the same time).
+
+Modals, lightboxes, tooltips, scroll indicators, carousels don't need JS either. Target, data attributes, siblings- and pseudo-selectors are very powerful.
+
+These are still all kinda hacky and not completely W3C compliant. They might be bad for performance too. A CSS modal cannot be focused on. And if the content inside it is important, you'll want to use the ESC key to close it, which you can't do without JS. These things are great for prototyping, but using them in production has its specific issues. With great power comes great responsibility, and the real power of CSS is that it creates a common language for designers and developers (note: in an ideal world..). But: always test for accessibility, performance, and browser support.
+
+CSS Grid is so hot right now <3 you can always use flexbox as a fall-back.
+
+(Things to check out: content editable. Reload code on the fly? Diffee.me. Youmightnotneedjs.com)
+
 
 <a name="vitaly"></a>
 # Vitaly Friedman: Smashing Magazine's 2017 Relaunch
