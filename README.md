@@ -10,10 +10,10 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 * [VITALY FRIEDMAN: Smashing Magazine’s 2017 Relaunch](#vitaly) *Responsive design/HTML, CSS, UX*
 * [SAM BELLEN: I didn't know the browser could do that!](#sam) *Browsers, APIs*
 * [ADAM MORSE: The past and future of designing interfaces](#adam) *CSS*
-* [ALLY LONG: Field-tested interfaces for the next billion](#ally) *UX*
 * [MARCO CEDARO: Components, patterns and sh*t it’s hard to deal with](#marco) *Patterns*
-* [NIELS LEENHEER: Monsters, mailboxes and other nonsense](#niels) *IoT*
 * [STEFAN JUDIS: Watch your back, Browser! You're being observed.](#stefan) *Browsers, APIs*
+* [ALLY LONG: Field-tested interfaces for the next billion](#ally) *UX*
+* [NIELS LEENHEER: Monsters, mailboxes and other nonsense](#niels) *IoT*
 
 **DAY TWO**
 * [PATRICK HAMANN: The First Meaningful Paint](#patrick) *Performance*
@@ -93,21 +93,25 @@ TL;DW: data is difficult and humans tend to make a lot of mistakes when working 
 
 A simple component can have thousands of states. And that's what computers should be for: see these states. That's not a human task. Seeing and testing all possible states of components would make any developer's life easier.
 
-<a name="ally"></a>
-# Ally Long: Field-tested interfaces for the next billion
-Notes go here :D
-
 <a name="marco"></a>
 # Marco Cedaro: Components, patterns and sh*t it’s hard to deal with
+Modular architecture, classes, components, modifiers, overrides -- it's a lot to deal with. Everyone has their own mental model of things. We've not been applying pattern libraries as a technique for a very long time in web development. When React was first released, most of us started building things in a modular way. But we're still struggling. When you actually try to apply a modular approach to your day to day work, it isn't simple -- not for design or development. It's like fitting a square peg in a round hole.
+
+So what is a pattern library here? A common language to cross cultural boundaries. It contains all visual elements which can be swapped seamlessly. Note: this definition differs for everyone. But how do we manage our code without making them too rigid for day to day use? Tweaks and changes are a fact of life, and pattern libraries don't embrace this necessarily. It becomes a cage rather than a tool.
+
+It's about modularity at its core, it's about modules' responsibilities, and about maintainability of the code. How do we re-use our patterns in slightly different cases? First, think about what problem you're trying to solve. Why the small change? How do we convey the meaning of an exception in our pattern library? Get involved early, talk to people (designers, PMs, not just devs), and remember that it's still a human problem and not hopeless.
+
+<a name="stefan"></a>
+# Stefan Judis: Watch your back, Browser! You're being observed.
 Notes go here :D
 
 <a name="niels"></a>
 # Niels Leenheer: Monsters, mailboxes and other nonsense
 Notes go here :D
 
-<a name="stefan"></a>
-# Stefan Judis: Watch your back, Browser! You're being observed.
-Notes go here :D
+<a name="ally"></a>
+# Ally Long: Field-tested interfaces for the next billion
+
 
 <a name="patrick"></a>
 # Patrick Hamann: The First Meaningful Paint
