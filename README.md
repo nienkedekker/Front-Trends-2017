@@ -37,7 +37,7 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 
 
 <a name="maciej"></a>
-# Maciej Cegłowski: Legends of the ancient web.
+# Maciej Cegłowski: Legends of the ancient web
 
 Let's reach into the past to see if we can find any insights. What has been will be again, there is nothing new under the sun. In the last couple of years, frontend development has become very complex: there are lots of technologies and frameworks to master. Computers move fast. It's happened before, and will happen again. It happens in backend too: what about virtual machines?
 
@@ -87,7 +87,11 @@ By combining these APIs you can actually build your own little Siri. Using Track
 
 <a name="adam"></a>
 # Adam Morse: The past and future of designing interfaces
-Notes go here :D
+Very interesting, hard to summarize. Watch the video!
+
+TL;DW: data is difficult and humans tend to make a lot of mistakes when working with data. We're not too good at it. A possible line of defense is modularity: breaking down a complex thin into understandable things might just help us avoid errors.
+
+A simple component can have thousands of states. And that's what computers should be for: see these states. That's not a human task. Seeing and testing all possible states of components would make any developer's life easier.
 
 <a name="ally"></a>
 # Ally Long: Field-tested interfaces for the next billion
