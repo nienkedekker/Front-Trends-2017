@@ -41,7 +41,7 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 
 Let's reach into the past to see if we can find any insights. What has been will be again, there is nothing new under the sun. In the last couple of years, frontend development has become very complex: there are lots of technologies and frameworks to master. Computers move fast. It's happened before, and will happen again. It happens in backend too: what about virtual machines?
 
-Maciej feels like standards have slipped a little: it's normal on the web things are as fast now as they were 10 years ago, it's normal that a web page is like 2mb. A render time of a second is acceptable, rather than instantaneously. Brittle and bloated sorcery: users haven't seen snappy websites in a long time, and this might actually be what they want.
+Maciej feels like standards have slipped a little: it's normal on the web things are as fast now as they were 10 years ago, it's normal that a web page is like 2mb. A render time of a second is acceptable, rather than instantaneously. Brittle and bloated sorcery: users haven't seen truly snappy websites in a long time.
 
 Of course, the former generations don't tell the newer generations this happens again and again. Our generation will forget too. So let's talk about the web that came before the web. The internet is a powerful force that comes into your private home. And it's occupied by big business, just like radio. But just like the radio, the internet brings people closer. The idea that is hard to accept for us is that people that try to build good things, end up making stuff that ultimately ends up being used for evil. Think of the Rwanda genocide: those that created the radio could not foresee their invention being used to incite violence and genocide. Technology and human nature interact in interesting ways. It is very possible the things we build may be used for bad later on. This is a threat, and we need to take it seriously.
 
@@ -89,7 +89,7 @@ By combining these APIs you can actually build your own little Siri. Using Track
 # Adam Morse: The past and future of designing interfaces
 Very interesting, hard to summarize. Watch the video!
 
-TL;DW: data is difficult and humans tend to make a lot of mistakes when working with data. We're not too good at it. A possible line of defense is modularity: breaking down a complex thin into understandable things might just help us avoid errors.
+TL;DW: data is difficult and humans tend to make a lot of mistakes when working with data. We're not too good at it. A possible line of defense is modularity: breaking down a complex thing into understandable things might just help us avoid errors.
 
 A simple component can have thousands of states. And that's what computers should be for: see these states. That's not a human task. Seeing and testing all possible states of components would make any developer's life easier.
 
@@ -117,14 +117,48 @@ Check out:
 * https://github.com/w3c/charter-webperf/issues/30
 * https://github.com/que-etc/resize-observer-polyfill (note: see similar Closure function https://google.github.io/closure-library/api/goog.dom.ViewportSizeMonitor.html)
 
-Observables: a collection that arrives over time. Observables can be used to model events, asynchronous requests, and animations. Observables can also be transformed, combined, and consumed using Array methods (map, filter, reduce).
+Observables: a collection that arrives over time. Observables can be used to model events, asynchronous requests, and animations. Observables can also be transformed, combined, and consumed using Array methods -- map, filter, reduce (exciting stuff!).
 
 <a name="niels"></a>
 # Niels Leenheer: Monsters, mailboxes and other nonsense
-Notes go here :D
+Kippendrinkbakverwarmingscontrolemachine, IoT, IoT, IoT. Insecure though: can't just send radio signals over the air and have people hack your chickens' water supply.
 
 <a name="ally"></a>
 # Ally Long: Field-tested interfaces for the next billion
+How does someone who’s been introduced to technology through a second-hand cheap Blackberry knock-off powered by a car battery respond to these new and shiny ways of interacting with machines? What effects do unreliable power and intermittent internet have on the user experience? How can we make sure that keeping up with the cutting edge won’t alienate the people in these fast-growing emerging economies who are just starting to get into the web?
+
+The next billion refers to the next big wave of people that are going to come online. Most people in the West are connected to the internet. That means there are plenty of people that have never filled out an online form or have been on Facebook. In sub-Saharan Africa, about 22% of the people are connected. However, this is changing extremely fast. The cost of data is decreasing, and the availability of phones is increasing. This is opening up a whole new world for a whole lot of people. These new internet users in these emerging economies are the next billion.
+
+Serving these users is the right thing to do - it's fair, it's democratic, and falls under the umbrella of accessibility. The internet should be open for everyone. Also, it makes sense from a business perspective. Designing/developing for emerging markets benefits everyone. Empathy is often cited as a driving factor in designing digital products -- see what we're building through their eyes, walk a mile in their shoes.
+
+But maybe empathy is bullshit. The concept is good, but it shouldn't be used as a replacement for research. It's hard for "us" to empathise with someone in rural Nigeria who relatively pays a lot more for data than "we" are and has no reliable power sources. So, let's put empathy aside for now, and do some actual field research. Go to the emerging markets physically and see how people are using the internet.
+
+Lessons learned (remember that every place is different):
+- There is no typical African user, just like there is no typical European user
+- Typical devices are on the low-end spectrum that run Android. A lot of Chinese-made knock-offs.
+- A lot of people have multiple phones and/or SIM cards, because networks and power is flaky.
+- The condition of the screen is usually not very good, this can mean tactile issues.
+- Opera Mini is huge, because it is extremely light on data usage.
+- Connectivity is terrible. Phones are offline most of the time. Data is either really expensive, or there is just no coverage. You rarely see wifi or broadband. And when you do have a connection, it's super slow. Don't tie UI elements to long-running operations such as network requests.
+- Finding a working power source is difficult. Charging things is also slow when using generators. Optimize for battery life!
+- People turn their phones off all the time. Turn it on, do a thing, then turn it off. Save data and battery life. Push notifs, sync and background refresh gets tricky.
+- Generally touch screen devices are easier to use for people than laptops. Using a device where the input is separated from the screen takes a lot longer to grok for most people.
+- Gesture based navigation doesn't work too well. Buttons work best. When using gestures, be careful when introducing them.
+- If elements are offscreen, they're not discoverable. For a novice tech user, scrolling is pretty counter intuitive. If you make people fill out a long form, they might not realize there's more under the fold. A good alternative is a wizard-style interface, where you break down elements in multiple pages.
+- Avoid concealed elements in general, such as the select type ("Choose a location"). It's very confusing. This is also not exclusive to Africa, people all over the world have issues with this. Again, a wizard-style interface might be a better option.
+- Things that can be pressed, must be made to look like they can be pressed. Make buttons and actions bigger, clickier and more obvious. Give the suggestion that elements are pushable. Clear labelling comes into place here too. Communicate that a button or field is for a specific kind of action. Skeuomorphic design may be a better choice than flat design for emerging markets.
+- People will click on everything. This lack of patience means robustness is very important. Feedback must be instantenous, or people will cancel and try again over and over again. Because people click so often, give them clear warnings and a back path.
+- Animations in form elements kind of sucks. Material Design has some great documentation on animation in form elements, but it fails in certain settings. It looks pretty, but does not add anything to the experience. Where animations really shine is when they describe a spatial model, like swiping: show people they're going forwards and backwards. This helps with learning gestures as well. A sliding animation provides a clear indication you're moving backwards and forwards.
+- Consistency is key! This helps users learn and memorize. Not everyone is literate and when being consistent, they don't have to be.
+- Make it fun. Not gamification, but clear, positive feedback.
+- When talking to people: keep calm and just shut up. Don't try to control the environment. Be in the moment, don't hide behind a laptop.
+- When in doubt, borrow from other apps like Facebook, WhatsApp and Gmail. These apps are common in Africa.
+
+It's not just UX people who benefit from shadowing these users: developers can benefit as well. There are a lot of technical challenges, it's not just UX stuff.
+
+Be curious, have empathy, but do the research. African tech consumers are like all other consumers: they're demanding and informed. They want the same things: clear, smooth and reliable solutions. The things that matter in Europe also matter in Africa -- but because of the aforementioned constraints people are forced to be more creative.
+
+Strip everything back to the essentials. Know your users. Don't make things just for folks in your community. These next billion people are the future of the internet.
 
 <a name="patrick"></a>
 # Patrick Hamann: The First Meaningful Paint
