@@ -75,7 +75,15 @@ Fluid behavior should also be able to be turned off, like in a fixed environment
 
 <a name="sam"></a>
 # Sam Bellen: I didn't know the browser could do that!
-Notes go here :D
+Most of these APIs are supported in Chrome and partially in other browsers.
+
+Speech API: the browser can also talk to you by converting text to spoken words. You need internet access for this, but setting up speech-recognition is not that hard. Other less well-known APIs are geolocation and notifications. Notifications need permission, and you can attach click handles to it. Another API is the Push API, which is sent from a backend (push) server, whereas notifications are sent from the frontend. Even if you're not on the website that pushes the notification, using the Push API, it can still push messages. Your window does not need to be open. A push notification needs a service worker. Once that's registered, you can subscribe to the pushManager and send the subscription to your push server. The service worker will then listen to push events, and do a bunch of things when one comes in.
+
+Next one: the battery manager API. A web browser can get your battery's data! It can show data, and notify you when that data changes (for instance, when you unplug your charger).
+
+Another cool one: the media recorder API. It records audio or video using your laptop's internal tools with just a few lines of JS.
+
+By combining these APIs you can actually build your own little Siri. Using Tracking.js you can also kinda make Snapchat filters 😱 Note to self: do something with this!
 
 <a name="adam"></a>
 # Adam Morse: The past and future of designing interfaces
@@ -95,4 +103,68 @@ Notes go here :D
 
 <a name="stefan"></a>
 # Stefan Judis: Watch your back, Browser! You're being observed.
+Notes go here :D
+
+<a name="patrick"></a>
+# Patrick Hamann: The First Meaningful Paint
+Notes go here :D
+
+<a name="zoe"></a>
+# Zoe Mickley Gillenwater: Experimenting your way to a better product
+Notes go here :D
+
+<a name="adim"></a>
+# Adim Makeev: I'm in IoT
+Notes go here :D
+
+<a name="val"></a>
+# Val Head: Motion In Design Systems: Animation, Style Guides, and the Design Process
+Notes go here :D
+
+<a name="kirupa"></a>
+# Kirupa Chinnathambi: Building a Progressive Web App
+Notes go here :D
+
+<a name="lin"></a>
+# Lin Clark: A Cartoon Intro to React Fiber
+Notes go here :D
+
+<a name="jack"></a>
+# Jack Franklin: The How, What and Why of migrating to ReactJS
+Notes go here :D
+
+<a name="mihai"></a>
+# Mihai Cernusca: Prevent Default — The future of authoring tools
+Notes go here :D
+
+<a name="konrad"></a>
+# Konrad Dzwinel: Alternative Reality DevTools
+Notes go here :D
+
+<a name="ola"></a>
+# Ola Gasidlo: Let's save the internet: How to make browsers compatible with the web
+Notes go here :D
+
+<a name="ida"></a>
+# Ida Aalen: Easy and affordable user-testing
+Notes go here :D
+
+<a name="martin"></a>
+# Martin Splitt: Rendering performance inside out
+Notes go here :D
+
+<a name="jenna"></a>
+# Jenna Zeigen: On How Your Brain is Conspiring Against You Making Good Software
+Notes go here :D
+
+<a name="chris"></a>
+# Chris Wright: Changing the layout game
+Notes go here :D
+
+<a name="rosie"></a>
+# Rosie Campbell: Demystifying Deep Neural Networks
+Notes go here :D
+
+<a name="socks"></a>
+# Phil Hawksworth: Microservices - The FAAS and the Furious
 Notes go here :D
