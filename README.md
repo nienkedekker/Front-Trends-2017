@@ -59,12 +59,19 @@ These are still all kinda hacky and not completely W3C compliant. They might be 
 
 CSS Grid is so hot right now <3 you can always use flexbox as a fall-back.
 
-(Things to check out: content editable. Reload code on the fly? Diffee.me. Youmightnotneedjs.com)
-
+(Things to look up: content editable. Reload code on the fly? Diffee.me. Youmightnotneedjs.com)
 
 <a name="vitaly"></a>
 # Vitaly Friedman: Smashing Magazine's 2017 Relaunch
-Notes go here :D
+Lessons learned when redesigning Smashing Magazine (SM). SM was losing lots of revenue because of ad-blocking. Now, they've replaced membership for ad revenue, brought more focus to their paid products (books). Another impetus for the redesign was to unify the platform behind SM. It's a magazine, a CMS, a job board, an ecommmerce platform, et cetera. It was hard to see the big picture behind all these components. It took a lot of research.
+
+We're too tied in to media queries. Defining the scope of breakpoints is almost impossible considering the huge amounts of devices and viewport sizes possible. You can't be sure your media queries cover everything. Avoid them as much as possible in the design process.
+
+How do you scale up/down a UI component in an efficient way, without fiddling with width and height, and still keep proportions intact? Use rem for root components, and em for sub-parts. Then, by adjusting the font-size of the root, we adjust all size-related CSS properties of a component at once. Curves instead of straight lines. y = mx + b helps you avoid media queries. Plug your min and max font sizes in and the formula takes care of the rest (you can use px too).
+
+Fluid behavior should also be able to be turned off, like in a fixed environment. That's all possible too.
+
+(Things to look up: fluid sizing)
 
 <a name="sam"></a>
 # Sam Bellen: I didn't know the browser could do that!
