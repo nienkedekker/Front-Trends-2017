@@ -221,7 +221,28 @@ IoT. Not my field of interest, but very funny talk!
 
 <a name="val"></a>
 # Val Head: Motion In Design Systems: Animation, Style Guides, and the Design Process
-Notes go here :D
+We tend to get stuck on static deliverables. We build based on static things, and this makes our lives harder when it comes to animation: we tend to leave it for the end. **If animation is always left to the end, it can never be more than decoration**. And as long as it's decoration, you're never going to get good at it. It takes a whole team to create good UI animations, both designers and developers. The better the communication is between the two, the better your animations will be. The earlier you start talking about it, the better both your code and design will be. You'll be able to create re-usable patterns instead of re-inventing the wheel every time there's a new animation.
+
+Phase 1: Storyboards and sketches. You can sketch animations with pen and paper. It starts with exploration. It doesn't have to be beautiful, just meaningful. Where is the potential for animation in this new product design? How could animations make certain screens easier to understand? It's all about ideas that can be as random and crazy as you want. And then, soryboarding an idea forces you to go through the logic of it, so you can explain it to your team members and make the magic happen.
+
+Action - Trigger - Quality
+For a storyboard, you need a trigger. What starts the animation? A gesture, a page load? Draw and describe this. Then, the action. What takes place, what happens? What will move, what will fade? Draw this in as many frames as needed. And third, think about the quality. How does it happen? Describe this in words: is the animation fast or slow? What's your intention?
+
+* https://medium.com/@evalottchen/the-choreography-of-sketching-b21f8ba644e
+* http://www.sketchnotesbook.com/resources/
+
+Phase 2: Motion comps. They're mock-ups and go into detail more than storyboards or sketches. It can be a video: what moves when, where, and how? You can very specific here. They're great for showing transitions between states. If you leave all that up to the developer, they have a lot of work to do. And then things get weird and terrible when you add designers' opinions in the mix. This could be avoided with a short video. It leaves a lot less up to interpretation. Motion comps are also a great place to explore whether an animation fits your brand, because that's hugely important. Val talks about how her bank shows a happy bouncy animation whenever she transfers money, which is confusing: you're spending a bunch of money, this is not a bouncy-happy event.
+
+Phase 3: Interactive prototypes. Let's get higher fidelity. These are different from motion comps in that they're interactive. You can click icons and get a good feel for the animation. Animation that looks good, may not actually feel good to interact with. It also helps you figure out if the animation feels right in a specific context, and if the animation works with input and real data. Prototypes are good for finding weaknesses.
+
+Tools: Principle (http://principleformac.com/), Framer (https://framer.com/), Atomic (https://atomic.io/) and of course CodePen. Tip from Val: use screenshots of your design and overlay your animation on top, as opposed to coding the whole thing in CodePen. Another tip: Chrome DevTools to slow down animations.
+
+Defining your brand in motion
+* Use design principles for inform motion decisions, just as you would when choosing a font.
+* Use brand pillars, voice and tone, experience pillars... don't start from scratch. Look at existing content and styleguides. If your tone of voice is human, reassuring and friendly, use that in your animations.
+* Once you've made these animation decisions, write them down! Document ALL the things. The core things, like duration, color changes, et cetera.
+    * https://www.lightningdesignsystem.com/guidelines/motion/
+    * http://carbondesignsystem.com/
 
 <a name="kirupa"></a>
 # Kirupa Chinnathambi: Building a Progressive Web App
