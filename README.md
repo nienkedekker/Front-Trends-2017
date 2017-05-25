@@ -248,11 +248,29 @@ Defining your brand in motion
 
 <a name="kirupa"></a>
 # Kirupa Chinnathambi: Building a Progressive Web App
-Notes go here :D
+PWAs are just web apps with some bells and whistles, really. Can be a game, site, book, art project - anything that works in the browser. They start and run really fast, they're responsive, they run over https and tend to work well offline. They can send push notifs, even if the browser is closed. To build one, you need 3 things:
+* A web app
+* A web app manifest: this is nothing more than a JSON file that provides information about your web app. They're like meta tags. With a manifest, you're telling the user agent that your web app is more than just a web app - you want to go beyond.
+* A service worker, which is really just a JS file, even though a rather complex one. It acts as a proxy that sits between your web app, the browser, and the network, when available. Safari and IE do not support service workers :( But that's okay, because it's a *progressive* web app.
+
+Check out:
+* https://ionicframework.com/
+* http://www.pwabuilder.com/
+* https://github.com/jeffposnick/create-react-pwa
+* https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+* https://www.pwastats.com/
+
+PWAs go beyond the browser. They have a life outside of the browser. They blur the line between web apps and native apps. You can add them to your Android home screen, the details of which are provided by your manifest.
+
+1. PWAs are just web apps thay provide a great user experience.
+2. Use progressive enhancement so everyone can use them.
+3. PWAs work great both inside and outside the browser.
+4. Sometimes they're the right solution, sometimes not, and that's okay.
+5. Have fun!
 
 <a name="lin"></a>
 # Lin Clark: A Cartoon Intro to React Fiber
-Notes go here :D
+React Fiber improves the perceived performance and responsiveness of complex React applications. 
 
 <a name="jack"></a>
 # Jack Franklin: The How, What and Why of migrating to ReactJS
