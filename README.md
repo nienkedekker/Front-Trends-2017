@@ -225,7 +225,7 @@ We tend to get stuck on static deliverables. We build based on static things, an
 
 Phase 1: Storyboards and sketches. You can sketch animations with pen and paper. It starts with exploration. It doesn't have to be beautiful, just meaningful. Where is the potential for animation in this new product design? How could animations make certain screens easier to understand? It's all about ideas that can be as random and crazy as you want. And then, storyboarding an idea forces you to go through the logic of it, so you can explain it to your team members and make the magic happen.
 
-![Val's talk](http://i.imgur.com/9Y1ahTg.jpg)
+![Val's talk](http://i.imgur.com/3TGEsw0.jpg)
 
 Action - Trigger - Quality
 For a storyboard, you need a trigger. What starts the animation? A gesture, a page load? Draw and describe this. Then, the action. What takes place, what happens? What will move, what will fade? Draw this in as many frames as needed. And third, think about the quality. How does it happen? Describe this in words: is the animation fast or slow? What's your intention?
