@@ -162,7 +162,36 @@ Strip everything back to the essentials. Know your users. Don't make things just
 
 <a name="patrick"></a>
 # Patrick Hamann: The First Meaningful Paint
-Notes go here :D
+To render a webpage browsers needs to go through the complex dance of networking, parsing and painting before any content can be displayed to your user. Over the years, we’ve developed mechanisms and hacks to aid the browser at each stage of this process, but these have always come at some cost or trade-off.
+
+What does it even mean to be fast? How long it takes to load a website, or how long it takes a user to achieve something? Fast means things in different contexts. And how do you measure performance? Is there a golden performance metric?
+
+Old performance metrics, the ones we used to optimize our websites for, actually aren't that meaningful to the user. They track how our pages are built, but they do not track the users' experience. A new collection of metrics, focused on UX, is emerging:
+
+- SpeedIndex
+- First meaningful painting
+- Time to interaction
+- Custom metrics! Context is everything. Human-centric metrics centered around experiences are way more important than 'old' performance metrics.
+
+TTFMP: what does it mean?
+It's the time when a page's primary content appeared on the screen. Important here: primary content. More specifically, the first paint after which the biggest above-the-fold layout change has happened, and web fonts have loaded (FOUT!). It's a very new metric, folks at Google wrote a whitepaper on it. They also created a tool: Lighthouse, because this metric isn't exposed in the browser API yet.
+
+Patrick worked on optimizing FT.com. He prefers using real case studies, because we're building real websites for real users. When optimizing, you need to create an average user profile. Where are your users based, what devices do they use, in what context are they using your site, what is their network profile, and the one thing you should be optimizing for: what did they come for? You need to create your own baseline/profile, and measure against that.
+
+Now, how to optimize?
+* Inline critical CSS. Unlike HTML, CSS cannot be parsed incrementally. It's also a SPOF - if the CSS doesn't load, you're presented with a white page, even though the content (HTML) is all there. Inlining critical CSS can improve TTFMP dramatically. We've eliminated the SPOF, but: it's not cachable :( it's also hard to maintain and hard to automate.
+* Preload API. Figure out what your website's critical resources are. Is it a logo? The fonts? Images? Lighthouse has got out back here and will tell you what your critical resources are. And once you've figured out these resources, optimize for these! Using the preload API, you can tell the browser "hey this is important, fetch this first". Web fonts are low in priority, unless you tell the browser otherwise! Note: fetch =/= execute.
+* HTTP/2 Server push. What if the server can predict what the next thing is that the browser is going to ask for? Less requests, more better! HTTP/2 is a beast (an awesome one), go read up on it (prioritization tree). Allows you to get rid of critical CSS too.
+* Async push: the holy grail.
+
+Notes to self:
+* Web fonts are slow and heavy, and are only initiated once your render tree is constructed. There's no point in loading 6 web fonts if they're going to be inside a div that has display: none on it.
+* Taking a human centered approach to performance, it's a good idea to record your app loading instead of depending on abstract waterfalls. if it feels fast, but the waterfall tells you it's not, make a decision as to what's more important to you.
+
+Look up:
+* webpagetest.org (allows for testing on real devices and real network conditions)
+* Filament Group loadCSS
+* Idle time
 
 <a name="zoe"></a>
 # Zoe Mickley Gillenwater: Experimenting your way to a better product
