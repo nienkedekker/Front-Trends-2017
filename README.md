@@ -1,4 +1,4 @@
-## Front Trends 2017
+surprisingly## Front Trends 2017
 ### May 24 - 26, Warsaw
 My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
@@ -195,7 +195,23 @@ Look up:
 
 <a name="zoe"></a>
 # Zoe Mickley Gillenwater: Experimenting your way to a better product
-Notes go here :D
+What works for one product doesn't work for all of them, just like parenting. There are no right answers, and despite thousands of expert opinions, our best practices continue to change and our websites still aren't perfect. So: we need to experiment to solve solutions instead of taking a one-size-fits-all approach.
+
+What makes A/B testing so powerful? It makes the users decide the direction of the product. It avoids HiPPos: highest paid person's opinion. It sucks having to implement some highly paid person's opinion that has no basis in reality. A/B testing is hard. Tests fail, assumptions fail, users do things you don't expect. But! In the end, the goals of the business and the users are the same (book a hotel room, buy a book..).
+
+Booking.com's process:
+1. Make observations: gather data, talk to users (qualitative and quantitative data).
+2. Formulate user-centered hypothesis: why, what, who, outcome? Why are you wanting to make a change, what is wrong with the current state? What problem are you trying to solve, and what evidence do you have that this is a problem? And who is going to be exposed to this change? How are you going to track these people? And what do you expect to happen, how do you measure success and failure? What metrics will you be using? The metric is NOT the goal: it is the measurement of the goal. State the why first, then the how!
+3. Create tests. Start with the smallest change possible. Most experiments will fail, so if your test is small, failure isn't so bad. Small, isolated changes allow you to iterate and learn fast.
+4. Decide on how long to run the test. Define statistic significance. A power calculator is helpful here.
+5. Evaluate. Metrics combined tell a story. You don't know which story is true, but you can create new hypotheses to test. Finding the right metric is hard. Take time on page: if a user spends a lot of time on your page, does that mean they're engaged, or does it mean relevant information is hard to find? Focus on metrics that matter to your users and your business. Negative experiments that fail are not bad! They give you a direction to head to. Learn from them.
+6. Accept or reject the hypothesis. A negative or neutral result doesn't necessarily mean no. Solid concepts may fail.
+
+Note to self: data over feelings. If you see something interesting in the data, act on that. If you "feel" a button doesn't work well, get data to back that up!
+
+Don't test the same thing over and over again: this is making a negative experiment seem positive. Also, don't cherry-pick metrics after running the experiment. Like all things statistics, there are fallacies and confirmation biases. And don't A/B test if you don't have enough data. Having no data is better than having wrong data. Incorrect conclusions will lead you down incorrect paths. And don't ever accept results on their face value: if a statistic is interesting or unusual, it's probably wrong. A suprisingly good result must be tested again. If it's real, the goodness will happen again.
+
+--> This talk is required watching!
 
 <a name="adim"></a>
 # Adim Makeev: I'm in IoT
