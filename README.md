@@ -1,4 +1,4 @@
-surprisingly## Front Trends 2017
+## Front Trends 2017
 ### May 24 - 26, Warsaw
 My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any spelling mistakes, and any potential misinterpretations are all mine :)
 
@@ -209,13 +209,15 @@ Booking.com's process:
 
 Note to self: data over feelings. If you see something interesting in the data, act on that. If you "feel" a button doesn't work well, get data to back that up!
 
+![Zoe's talk](http://i.imgur.com/N473fWn.jpg)
+
 Don't test the same thing over and over again: this is making a negative experiment seem positive. Also, don't cherry-pick metrics after running the experiment. Like all things statistics, there are fallacies and confirmation biases. And don't A/B test if you don't have enough data. Having no data is better than having wrong data. Incorrect conclusions will lead you down incorrect paths. And don't ever accept results on their face value: if a statistic is interesting or unusual, it's probably wrong. A suprisingly good result must be tested again. If it's real, the goodness will happen again.
 
 --> This talk is required watching!
 
 <a name="adim"></a>
 # Adim Makeev: I'm in IoT
-Notes go here :D
+IoT. Not my field of interest, but very funny talk!
 
 <a name="val"></a>
 # Val Head: Motion In Design Systems: Animation, Style Guides, and the Design Process
