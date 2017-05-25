@@ -270,11 +270,11 @@ PWAs go beyond the browser. They have a life outside of the browser. They blur t
 
 <a name="lin"></a>
 # Lin Clark: A Cartoon Intro to React Fiber
-React Fiber improves the perceived performance and responsiveness of complex React applications. 
+React Fiber improves the perceived performance and responsiveness of complex React applications. This was a rather complex talk with great illustrations: notes won't do it justice, just watch it :D
 
 <a name="jack"></a>
 # Jack Franklin: The How, What and Why of migrating to ReactJS
-Notes go here :D
+Jack talked about how his team moved from Angular to React. As someone who works with neither, I just listened. I liked this concept: https://www.martinfowler.com/bliki/StranglerApplication.html
 
 <a name="mihai"></a>
 # Mihai Cernusca: Prevent Default — The future of authoring tools
