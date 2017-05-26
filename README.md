@@ -18,7 +18,7 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 **DAY TWO**
 * [PATRICK HAMANN: The First Meaningful Paint](#patrick) *Performance*
 * [ZOE MICKLEY GILLENWATER: Experimenting your way to a better product](#zoe) *A/B testing*
-* [ADIM MAKEEV: I'm in IoT](#vadim) *IoT, APIs*
+* [VADIM MAKEEV: I'm in IoT](#vadim) *IoT, APIs, Bluetooth*
 * [VAL HEAD: Motion In Design Systems: Animation, Style Guides, and the Design Process](#val) *Animation*
 * [KIRUPA CHINNATHAMBI: Building a Progressive Web App](#kirupa) *PWAs*
 * [LIN CLARK: A Cartoon Intro to React Fiber](#lin) *React*
@@ -215,9 +215,13 @@ Don't test the same thing over and over again: this is making a negative experim
 
 --> This talk is required watching!
 
-<a name="adim"></a>
-# Adim Makeev: I'm in IoT
+<a name="vadim"></a>
+# Vadim Makeev: I'm in IoT
 IoT. Not my field of interest, but very funny talk!
+
+[Slides for the presentation](https://pepelsbey.net/pres/im-in-iot/)
+
+![Vadim's talk](https://pepelsbey.net/pres/im-in-iot/pictures/drone-result.jpg)
 
 <a name="val"></a>
 # Val Head: Motion In Design Systems: Animation, Style Guides, and the Design Process
