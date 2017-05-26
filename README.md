@@ -27,9 +27,9 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 
 **DAY THREE**
 * [KONRAD DZWINEL: Alternative Reality DevTools](#konrad) *Devtools*
+* [MARTIN SPLITT: Rendering performance inside out](#martin) *Performance*
 * [OLA GASIDLO: Let's save the internet: How to make browsers compatible with the web](#ola) *Browsers*
 * [IDA AALEN: Easy and affordable user-testing](#ida) *UX, testing*
-* [MARTIN SPLITT: Rendering performance inside out](#martin) *Performance*
 * [JENNA ZEIGEN: On How Your Brain is Conspiring Against You Making Good Software](#jenna) *Humans*
 * [CHRIS WRIGHT: Changing the layout game](#chris) *HTML, CSS*
 * [ROSIE CAMPBELL: Demystifying Deep Neural Networks](#rosie) *Machine learning*
@@ -282,7 +282,47 @@ Missed this one :(
 
 <a name="konrad"></a>
 # Konrad Dzwinel: Alternative Reality DevTools
-Notes go here :D
+Also missed this one, damn you Polish trains
+
+<a name="martin"></a>
+# Martin Splitt: Rendering performance inside out
+Doing 3D and VR in the browser is great, but still bleeding edge. How do you make these cool new things performant? As developers, we have great tools that help us figure out what renders well in the browser, and what doesn't. Let's dig a little deeper into rendering performance.
+
+How do pixels even show up on our screens? Pixels are the smallest units we have, and it's technically a small box we can color in by making 3 tinier dots inside it: RGB.
+
+* 0: color intensity is 'off'
+* 255: color intensity is at its highest
+
+From tiny dots lighting up we go to numbers, technically bytes. Rendering is really just random numbers. Pixels are independent of each other. They do not overlap.
+
+Sprites are nothing more than arrays of pixels going on and off screen. Moving things is just moving arrays to different positions. If you do this right, you end up with nyancat! And if you do this right, this is really performant because computers are pretty good at moving and copying memory around.
+
+There are tons of equations called blending that allow you to combine different layers on screen (see: Una's talk).
+* output[x, y] = source[x, y] || dest[x, y]
+* Screen blend mode: color(x, y) = 1 - (1 - color(x, y)) * (1 - color(x, y))
+* Translate (move): source[x + a, y +b] + dest[x, y]
+* Rotate, translate, scaling, blending and filters are all composites (note: does not work on all browsers because we cannot have nice things)
+
+What composite-only filters (i.e. no browser repainting, unless using SVGs) are there?
+* grayscale
+* blur
+* contrast
+* hue-rotate
+* invert
+* opacity
+* saturate
+* sepia
+* drop-shadow (repaints in Safari though)
+
+Pixels are just a bunch of numbers in memory. Useful to be separate then in layers. Compositing is combining these layers, and blending is how exactly we combine them. Compositing can be done concurrently, because pixels are independent of each other.
+
+Performance is the art of avoiding work (Paul Lewis). The more work avoided, the faster we can render.
+
+`will-change` only works if the element isn't in the layout flow!
+
+* https://csstriggers.com/
+
+![Martin's talk](http://i.imgur.com/NSvQ2RI.jpg?1)
 
 <a name="ola"></a>
 # Ola Gasidlo: Let's save the internet: How to make browsers compatible with the web
@@ -290,10 +330,6 @@ Notes go here :D
 
 <a name="ida"></a>
 # Ida Aalen: Easy and affordable user-testing
-Notes go here :D
-
-<a name="martin"></a>
-# Martin Splitt: Rendering performance inside out
 Notes go here :D
 
 <a name="jenna"></a>
