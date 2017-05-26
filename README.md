@@ -328,11 +328,11 @@ Performance is the art of avoiding work (Paul Lewis). The more work avoided, the
 # Ida Aalen: Easy and affordable user-testing
 Not everyone has the time or budget to do proper user-testing. Colleagues are not your users, so don't depend on them for user testing. It's hard for developers and designers to understand that we know a lot more than the average user. We don't see usability problems -- the hamburger icon was logical for devs, but most users have no idea what it means. We think a lot of things are obvious that actually aren't.
 
-![Ida](http://i.imgur.com/QsEHcik.jpg?1)
+![Ida](http://i.imgur.com/nX4OH06.jpg?1)
 
 We need to user test because we're in our own little technology bubble. And testing doesn't have to be difficult. You don't need hundreds of people - five is usually enough.
 
-![Ida](http://i.imgur.com/nX4OH06.jpg?1)
+![Ida](http://i.imgur.com/QsEHcik.jpg?1)
 
 *7 low-cost and low-effort ways to user test*
 1. Hit the streets. All you need is some time. Make sure the forms are easy and you have an incentive for people to fill it out (see: snacks). Look for the people being bored on their phones. Always include bananas ;) If you're not comfortable with approaching strangers, you can recruit your Facebook friends. Make sure you come to them and bribe them with cinnamon buns -- the easier you make testing for your subjects, the lower the treshold. A good idea is to make screen recordings using Quicktime, recording mouse clicks and sound.
