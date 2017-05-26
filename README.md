@@ -388,7 +388,7 @@ From a cognitive science angle, diversity is extremely valuable. The wider the a
 # Chris Wright: Changing the layout game
 We've been using tables and floats (shout-out to clearfix) to make layouts. We make the craziest hacks to come up with solutions for features we do not yet have. And these hacks have become features, or influenced them. Hacks are our desire paths. Some hacks are brilliant, some hacks are dirty. Intrinsic ratio is a unique, brilliant hack (block padding is relative to the width of the element). Dirty hacks tend to be about browser isolation and they don't tend to last.
 
-Layout is the most hacked area on the web. Are declarative grids our saviour?
+Layout is the most hacked area on the web. Are declarative grids our savior?
 
 `fr`: fraction unit. 1fr is one "fractional unit", which is a way of saying "the remaining space in the element". https://www.w3.org/TR/css3-grid-layout/#fr-unit
 
@@ -396,7 +396,13 @@ Layout is the most hacked area on the web. Are declarative grids our saviour?
 
 <a name="rosie"></a>
 # Rosie Campbell: Demystifying Deep Neural Networks
-Notes go here :D
+Neural networks are hugely popular and there's a good change you will have to interact with them at some point. They're actually not as hard as you might think.
+
+The internet provides us with huge datasets which we can use for neural networking. This used to be a bottleneck in the past. With a NN you give it a lot of examples of cats, and not cats. The machine then works out the features it needs to look for, by itself. NN are biologically inspired, the machine learns a complex multidimensional model which allows it to take edge cases into account. NN are good at things humans are good in, like pattern matching.
+
+The difficult bit is figuring out what all the weights and biases should be. We do this by training the network. You randomly initialize the network weights and biases, insert a bunch of training data, and check if the network gets it right for every training data piece. If it got it wrong, how wrong was it? Then, nudge the weights to increase the probability of a correct result. Goal: minimalize the loss function (i.e. wrong predictions/outcomes).
+
+Tensorflow takes out a lot of the math/trickery.
 
 <a name="socks"></a>
 # Phil Hawksworth: Microservices - The FAAS and the Furious
