@@ -278,7 +278,7 @@ Jack talked about how his team moved from Angular to React. As someone who works
 
 <a name="mihai"></a>
 # Mihai Cernusca: Prevent Default — The future of authoring tools
-Notes go here :D
+Missed this one :(
 
 <a name="konrad"></a>
 # Konrad Dzwinel: Alternative Reality DevTools
