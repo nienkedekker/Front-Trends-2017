@@ -345,7 +345,6 @@ We need to user test because we're in our own little technology bubble. And test
 
 These techniques are best used in combination.
 
-
 * http://bit.ly/tools-for-testing
 * https://alistapart.com/article/never-show-a-design-you-havent-tested-on-users
 
@@ -363,11 +362,37 @@ Participate in this process! Sets of rules that everyone agrees on can still evo
 
 <a name="jenna"></a>
 # Jenna Zeigen: On How Your Brain is Conspiring Against You Making Good Software
-Notes go here :D
+Turns out, humans aren't particularly a good fit for programming. We are predictably irrational (Dan Ariely) - we employ tricks, patterns and shortcuts to think fast, but this has downsides for our judgment. We constantly make errors called cognitive biases. And if software is for people written by people, how do we make sure we don't carry these biases on to our code?
+
+Logic is the fundamental underpinning of programming, and humans are not very good logical thinkers. But there is hope: we get better when reasoning about concrete examples.
+
+We tend to interpret and favor information to confirm our pre-existing beliefs: the confirmation bias. We don't really care about alternative hypotheses. This is important when testing code. When our code is wrong, we tend to really crack down on the "I can't be wrong" fallacy. This makes debugging hard. Humans also have  tendency to be rigid in how we approach a problem. Outside the box thinking is really hard. Approaching a problem from a whole new viewpoint is hard. Some solutions: pair programming and taking breaks!
+
+We prefer things that we have made or assemled ourselves. A homegrown rickety JS library is seen as more worthy than a library written by other people.
+* http://homepages.se.edu/cvonbergen/files/2013/01/The-IKEA-Effect_When-Labor-Leads-to-Love.pdf
+
+Another thing we're terrible at is estimating at how long it will take to do something (personal note: underpromise, overdeliver!). This is a result of the optmimism bias: bad things are more likely to happen to other people than to us. We don't have to plan for illness because we're not going to get ill.
+
+Humans are pretty good at selective attention, surprisingly. We're adept at filtering out unwanted noise. But we're not totally oblivious to it. We may notice music playing, but we may not notice the actual words used. The cocktail effect suggests that selective attention requires both ignoring and paying attention. Our mental resources are limited, and we're putting active effort into blocking out irrelevant conversations. Proof why open offices suck :(
+
+* https://en.wikipedia.org/wiki/Dichotic_listening
+* https://en.wikipedia.org/wiki/Stroop_effect
+
+We can't control the processes inside our brains (unlike computers). Unskilled people think they are better at tasks than they actually are (Dunning-Kruger). We tend to overestimate our own skills and abilities compared to others. And you're not gonna make good software if you're not aware of how much you don't know. If you think other people are all clueless, then you might actually miss out on some great problem solving.
+
+* https://www.recurse.com/manual#sub-sec-social-rules
+
+From a cognitive science angle, diversity is extremely valuable. The wider the array of experiences and interests, the larger your collective associative memory is, and the better our team becomes at making good software.
 
 <a name="chris"></a>
 # Chris Wright: Changing the layout game
-Notes go here :D
+We've been using tables and floats (shout-out to clearfix) to make layouts. We make the craziest hacks to come up with solutions for features we do not yet have. And these hacks have become features, or influenced them. Hacks are our desire paths. Some hacks are brilliant, some hacks are dirty. Intrinsic ratio is a unique, brilliant hack (block padding is relative to the width of the element). Dirty hacks tend to be about browser isolation and they don't tend to last.
+
+Layout is the most hacked area on the web. Are declarative grids our saviour?
+
+`fr`: fraction unit. 1fr is one "fractional unit", which is a way of saying "the remaining space in the element". https://www.w3.org/TR/css3-grid-layout/#fr-unit
+
+* https://alistapart.com/article/quantity-queries-for-css
 
 <a name="rosie"></a>
 # Rosie Campbell: Demystifying Deep Neural Networks
