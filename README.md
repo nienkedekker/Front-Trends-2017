@@ -28,8 +28,8 @@ My notes on [Front-Trends 2017](https://2017.front-trends.com/). Don't mind any 
 **DAY THREE**
 * [KONRAD DZWINEL: Alternative Reality DevTools](#konrad) *Devtools*
 * [MARTIN SPLITT: Rendering performance inside out](#martin) *Performance*
-* [OLA GASIDLO: Let's save the internet: How to make browsers compatible with the web](#ola) *Browsers*
 * [IDA AALEN: Easy and affordable user-testing](#ida) *UX, testing*
+* [OLA GASIDLO: Let's save the internet: How to make browsers compatible with the web](#ola) *Browsers*
 * [JENNA ZEIGEN: On How Your Brain is Conspiring Against You Making Good Software](#jenna) *Humans*
 * [CHRIS WRIGHT: Changing the layout game](#chris) *HTML, CSS*
 * [ROSIE CAMPBELL: Demystifying Deep Neural Networks](#rosie) *Machine learning*
@@ -314,7 +314,7 @@ What composite-only filters (i.e. no browser repainting, unless using SVGs) are 
 * sepia
 * drop-shadow (repaints in Safari though)
 
-Pixels are just a bunch of numbers in memory. Useful to be separate then in layers. Compositing is combining these layers, and blending is how exactly we combine them. Compositing can be done concurrently, because pixels are independent of each other.
+Pixels are just a bunch of numbers in memory. Useful to be separate them in layers. Compositing is combining these layers, and blending is how exactly we combine them. Compositing can be done concurrently, because pixels are independent of each other.
 
 Performance is the art of avoiding work (Paul Lewis). The more work avoided, the faster we can render.
 
@@ -324,13 +324,42 @@ Performance is the art of avoiding work (Paul Lewis). The more work avoided, the
 
 ![Martin's talk](http://i.imgur.com/NSvQ2RI.jpg?1)
 
-<a name="ola"></a>
-# Ola Gasidlo: Let's save the internet: How to make browsers compatible with the web
-Notes go here :D
-
 <a name="ida"></a>
 # Ida Aalen: Easy and affordable user-testing
-Notes go here :D
+Not everyone has the time or budget to do proper user-testing. Colleagues are not your users, so don't depend on them for user testing. It's hard for developers and designers to understand that we know a lot more than the average user. We don't see usability problems -- the hamburger icon was logical for devs, but most users have no idea what it means. We think a lot of things are obvious that actually aren't.
+
+![Ida](http://i.imgur.com/QsEHcik.jpg?1)
+
+We need to user test because we're in our own little technology bubble. And testing doesn't have to be difficult. You don't need hundreds of people - five is usually enough.
+
+![Ida](http://i.imgur.com/nX4OH06.jpg?1)
+
+*7 low-cost and low-effort ways to user test*
+1. Hit the streets. All you need is some time. Make sure the forms are easy and you have an incentive for people to fill it out (see: snacks). Look for the people being bored on their phones. Always include bananas ;) If you're not comfortable with approaching strangers, you can recruit your Facebook friends. Make sure you come to them and bribe them with cinnamon buns -- the easier you make testing for your subjects, the lower the treshold. A good idea is to make screen recordings using Quicktime, recording mouse clicks and sound.
+2. Information architecture. Set up a survey that mimics the structure of your information architecture, and ask people questions/give them tasks.
+3. First click
+4. Prototype meets actual users: share a Facebook/Twitter link to a website, and have that website actually be the protoype you want to test. Don't tell the users though.
+5. Did you get it done? Just ask users if they found a part of a website useful using a tiny form. Did you find what you were looking for? Measure the yes and no's.
+6. Microtesting content. Print out the text you want to test, fold the paper, and ask users the questions they expect will be answered on this page. Once they did so, have them look at the page and check if the content meets their need. You can do this over email or the phone too.
+7. Weekly drop-in test: basically a usability lab. Not too hard or expensive to set up.
+
+These techniques are best used in combination.
+
+
+* http://bit.ly/tools-for-testing
+* https://alistapart.com/article/never-show-a-design-you-havent-tested-on-users
+
+<a name="ola"></a>
+# Ola Gasidlo: Let's save the internet: How to make browsers compatible with the web
+What's this web compatibility thing? A compat bug is when something works in one browser, but not the other. Note: report these bugs! http://webcompat.com/ is a good resource for reporting.
+
+Ola goes into browser wars for a bit: the struggle for market dominance. The first browser war, between 1995-2002, was between Netscape and Internet Explorer. Both were free for both commercial and non-commercial use. JS, more HTML tags, CSS support was all added. IE really won this one: in 2002, 96% of internet users were using IE.
+
+The second browser war was from 2003 - 2014. IE usage declined. Opera, Safari, Firefox and mobile Safari were all released during this time. And then Google released Chrome in 2008. Pairing it with Android decided the war: Chrome won. The second browser war was all about developers and performance. Usability for developers was the main focus.
+
+Now, we've realized that war is pretty dumb and we're stronger as a unit. APIs can still be different because of different rendering engines, but devs are working together. Browser developers actually started implementing specs as defined by W3C instead of going "eh, this works for us, screw the rest". And via WHATWG (https://whatwg.org/), 'regular' people now have a voice too. The community decides alongside the W3C on specs and their implementations.
+
+Participate in this process! Sets of rules that everyone agrees on can still evolve when new insights develop. You don't need to be a super duper smart browser genius to contribute.
 
 <a name="jenna"></a>
 # Jenna Zeigen: On How Your Brain is Conspiring Against You Making Good Software
