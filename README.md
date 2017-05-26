@@ -406,4 +406,24 @@ Tensorflow takes out a lot of the math/trickery.
 
 <a name="socks"></a>
 # Phil Hawksworth: Microservices - The FAAS and the Furious
-Notes go here :D
+Phil crushes dreams. He does care about empowerment and responsibility for web developers. Complexity is a curse, and can be a barrier, whereas simplicty is an enabler. Unfortunately, simplicity is hard to achieve. Let's talk about offloading complexity. Websites used to be collections of static assets. These days, we have to deal with views, routing, app logic, databases, caching, load balancing, CDNs, etc. There are a lot of moving parts that cannot be maintained by just one person.
+
+So..let's go static! However, static sites are limited. But the ceiling is far higher than you may think. We're seeing a rebranding: JAM stack (JS, Api, mark-up).
+
+* https://www.netlify.com/
+
+We can use microservices to extend static websites. Ex: live content on a static site, like recent tweets:
+* client side twitter JS widget (but ew, their branding, and dependencies)
+* write your own client side twitter feed (still dependencies)
+* part of the HTML (but if you do not have a dynamic backend, how do you avoid stale content)
+
+Let's start looking at services outside our own build. But how do you manage content outside your own site? Maybe content as a service, like Contentful. Twitter is just another data-source we want to integrate in our build. How do you watch for changes and trigger a build?
+
+What about IFTT? If new tweet, then rebuild by using webhooks. Or let's go even deeper: offload functions to others.
+
+* https://aws.amazon.com/lambda/
+* https://serverless.com/
+* https://stdlib.com/
+
+** There is great power in avoiding responsibility 🕷**
+Offload complexity and don't be afraid to start small. Start with one request, or one question. Simplifying =/= dumbing down, it lets us focus on what matters.
